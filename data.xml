@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+ <movie id='1'>
+   <name>Нет</name>
+   <year>2022</year>
+   <director>Jordan Peele</director>
+ </movie>
+ <movie id='2'>
+   <name>Волк с Уолл Стрит</name>
+   <year>2013</year>
+   <director>idk</director>
+ </movie>
+
+</movies>

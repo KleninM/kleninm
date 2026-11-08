@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9; /* Очень светлый серый фон */
+    color: #333333; /* Темно-серый текст (не черный, мягче для глаз) */
+    line-height: 1.6; /* Красивый межстрочный интервал */
+}
+h1 {
+    color: #2c3e50; /* Темно-синий цвет */
+    text-align: center;
+    font-size: 36px;
+}
+h2 {
+    color: #3498db; /* Голубой */
+    border-bottom: 2px solid #3498db; /* Подчеркивание: толщина 2px, сплошная линия, голубой цвет */
+    padding-bottom: 5px; /* Отступ снизу, чтобы текст не прилипал к линии */
+}
+a {
+    color: white;
+    background-color: #2980b9; /* Синий фон */
+    padding: 10px 15px; /* Отступы внутри кнопки: сверху/снизу 10px, слева/справа 15px */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругленные уголки */
+}
+
+/* При наведении мышки цвет меняется */
+a:hover {
+    background-color: #1f618d; /* Более темный синий */
+}
+h5 {
+    color:#e32636;
+    text-align: center;
+    font-size: 70px
+
+}
+table {
+    width: 100%; /* Таблица на всю ширину страницы */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    background-color: #4CAF50; /* Зеленый фон для шапки */
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #ddd; /* Светло-серая рамка */
+    padding: 12px;
+    text-align: center; /* Текст по центру */
+}
+/* Эффект "зебры" (чередование цвета строк) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* При наведении на строку она подсвечивается */
+tr:hover {
+    background-color: #f1f1f1;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around; /* Равномерно распределить карточки */
+    align-items: stretch; /* Растянуть по высоте */
+    flex-wrap: wrap; /* Если не влезают, переносить на новую строку */
+    gap: 20px; /* Промежуток между карточками */
+    padding: 20px;
+}
+
+.card {
+    width: 280px; /* Ширина контента */
+    background-color: white;
+    border: 1px solid #ddd; /* Легкая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 15px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Легкая тень для объема */
+    transition: transform 0.2s; /* Плавная анимация */
+}
+
+.card:hover {
+    transform: scale(1.05); /* При наведении карточка слегка увеличивается */
+}
+
+.card img {
+    width: 100%; /* Картинка занимает всю ширину карточки */
+    height: auto;
+    border-radius: 8px; /* Скругляем углы у картинки */
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #555;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60; /* Зеленый цвет цены */
+    text-align: right; /* Прижать цену вправо */
+}
+
+.card button {
+    background-color: #3498db;
+    color: rgb(253, 253, 253);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Рука при наведении */
+    width: 100%; /* Кнопка на всю ширину */
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color: #2980b9;
+}
+.card-selected {
+    border: 3px solid #e74c3c;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5);
+}
